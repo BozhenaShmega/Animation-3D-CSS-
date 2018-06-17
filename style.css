@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: rgb(216, 215, 215);
+    font-family: sans-serif;
+}
+.section {
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+.container {
+    margin: auto auto auto 12%;
+    width: 680px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 1s;
+    transform: rotateX(55deg) rotateZ(-50deg) rotateY(17deg);
+    transform-style: preserve-3d;
+}
+.container-origin {
+    transform: rotate(0);
+}
+img {
+    max-width: 100%;
+}
+.card {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.card:hover {
+    cursor: pointer;
+    transform: translateZ(10px);
+}
+.block-text {
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(153, 153, 153);
+    line-height: 1.5;
+}
+h1 {
+    margin-bottom: 0;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+}
